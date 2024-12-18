@@ -31,7 +31,7 @@ public with sharing class TriggerTest {
     * Trigger should only fire on insert.
     */
     @IsTest 
-    static void testAccountTrigger_setTypeProspect() {
+    static void TestAccountTrigger_setTypeProspect() {
         // Prepare the test data
         List<Account> accountTypeProspect = new List<Account>();
         List<Account> accountTypeNotChange = new List<Account>();
@@ -85,7 +85,7 @@ public with sharing class TriggerTest {
     * Trigger should only fire on insert.
     */
     @IsTest 
-    static void testAccountTrigger_addressCopy() {
+    static void TestAccountTrigger_addressCopy() {
         // Prepare the test data
         List<Account> accountsToInsert = new List<Account>();
         for (Integer i = 0; i < 200; i++) {
@@ -145,7 +145,7 @@ public with sharing class TriggerTest {
     * Trigger should only fire on insert.
     */
     @IsTest 
-    static void testAccountTrigger_setRating() {
+    static void TestAccountTrigger_setRating() {
         // Prepare the test data
         List<Account> accountsToInsert = new List<Account>();
         List<Account> accountsNotHot = new List<Account>();
@@ -209,7 +209,7 @@ public with sharing class TriggerTest {
     * Trigger should only fire on insert.
     */
     @IsTest
-    static void testAccountTrigger_defaultContact() {
+    static void TestAccountTrigger_defaultContact() {
         // Prepare the test data
         List<Account> accountsToInsert = new List<Account>();
         for (Integer i = 0; i < 400; i++) {
@@ -258,7 +258,7 @@ public with sharing class TriggerTest {
     * Trigger should only fire on update.
     */
     @IsTest
-    static void testOpportunityTrigger_amountValidation() {
+    static void TestOpportunityTrigger_amountValidation() {
         // Prepare the test data
         List<Opportunity> opportunitiesToInsert = new List<Opportunity>();
         for (Integer i = 0; i < 400; i++) {
@@ -311,7 +311,7 @@ public with sharing class TriggerTest {
 	 * Trigger should only fire on delete.
 	 */
     @IsTest
-    static void testOpportunityTrigger_deleteCloseWonOpportunity() {
+    static void TestOpportunityTrigger_deleteCloseWonOpportunity() {
         // Prepare the test data
         Account testAccount = new Account(Name = 'Test Account', Industry = 'Banking');
         insert testAccount;
@@ -347,7 +347,7 @@ public with sharing class TriggerTest {
     * Trigger should only fire on update.
     */
     @IsTest
-    static void testOpportunityTrigger_setPrimaryContact() {
+    static void TestOpportunityTrigger_setPrimaryContact() {
         // Prepare the test data
         List<Account> accountsToInsert = new List<Account>();
         for (Integer i = 0; i < 10; i++) {
